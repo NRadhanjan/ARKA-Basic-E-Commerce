@@ -1,0 +1,585 @@
+<!DOCTYPE html>
+<html lang="en">
+<style>
+    @keyframes slide {
+        from{
+            transform: translateX(0);
+        }
+        to{
+            transform: translateX(-100%);
+        }
+    }
+
+    .oo{
+        overflow: hidden;
+        white-space: nowrap;
+    }
+    .ooo{
+        display: inline-block;
+        animation: slide 7s linear infinite;
+        font-size: 60%;
+    }
+    body{
+        overflow-x: hidden;
+        margin: 0px;
+    }
+    .header{
+        background-color: #cbcbcb;
+    }
+    .logo{
+        height: 80px;
+        overflow: hidden;
+    }
+    .logo img{
+        height: 100px;
+        object-fit: cover
+    }
+    .navbar{
+        display:flex;
+        justify-content:space-between;
+        
+    }
+    .navv{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding: 10px;
+        top: 0;
+        left: 0;
+    }
+    .contents{
+        margin-left: 20px;
+    }
+    .navv a{
+        text-decoration: none;
+        color: #1a1a2e;
+        margin-right: 25px;
+    }
+    .cont1{
+        padding-left: 25px;
+        padding-right: 0px;
+    }
+    .row{
+        margin-top: 30px;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+    .col2{
+        justify-content: flex-end;
+    }
+    .col2 img{
+        margin-right: 0px;
+        width: 55%;
+        float: right;
+        display: block;
+    }
+    .col2 h1{
+        font-size: 50px;
+        line-height: 60px;
+        margin: 25px;
+    }
+    .explnow{
+        text-decoration: none;
+        color: white;
+        background-color: black;
+        padding: 10px;
+        border-radius: 10px;
+    }
+
+
+    .tt:hover{
+        transform: scale(1.1);
+        cursor: pointer;
+        background-color: #383841;
+        display: inline-block;
+        overflow: hidden;
+        transition: transform 0.2s ease;
+        background-color: #0d0d0d;
+    color: #d4af37;  
+         
+    }
+    .tt img {
+    width: 200px;  
+    height: 250px;
+    object-fit: cover;
+}
+
+.tt{
+    font-family: 'Cinzel', serif;
+}
+    
+        .frimg{
+            width: 240px;
+            border-radius: 20px;
+        }
+        div.mimgs{
+            display: flex;
+            justify-content: space-around;
+            padding: 20px;
+            position: relative;
+  
+        }
+        div.mi{
+            display: flex;
+            justify-content: space-around;
+            padding: 20px;
+            position: relative;
+  
+        }
+        .tysh{
+            color: beige;
+            background-color: rgb(0, 0, 0);
+            display: inline;
+            padding: 7px;
+            border-radius: 10px;
+        }
+        a{
+            text-decoration: none;
+        }
+        .tysh:hover{
+            cursor: pointer;
+        }
+        .signupimg{
+            position: relative;
+            width: 35%;
+            display: inline-block;
+        }
+        .signup{
+            position: absolute;
+            top: 45%;
+            left: 40%;
+            transform: translate(-50%, -50%);
+        }
+        .lastpag{
+            background-color: #C1B18F;
+            width: 65%;
+            display: flex;
+            padding: 20px;
+            justify-content: space-around;
+        }
+</style>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ARKA Fashions</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+</head>
+<body>
+    <div style="background-color: #ffffff;" class="oo">
+        <div class="ooo">
+            <p>Free Shipping over 5000   &emsp; &emsp; &emsp; &emsp;  Signup for 10% off your first order
+                &emsp; &emsp; &emsp; &emsp;</p>
+        </div>
+        <div class="ooo">
+            <p>Free Shipping over 5000   &emsp; &emsp; &emsp; &emsp;  Signup for 10% off your first order
+                &emsp; &emsp; &emsp; &emsp;</p>
+        </div>
+        <div class="ooo">
+            <p>Free Shipping over 5000   &emsp; &emsp; &emsp; &emsp;  Signup for 10% off your first order
+                &emsp; &emsp; &emsp; &emsp;</p>
+        </div>
+        <div class="ooo">
+            <p>Free Shipping over 5000   &emsp; &emsp; &emsp; &emsp;  Signup for 10% off your first order
+                &emsp; &emsp; &emsp; &emsp;</p>
+        </div>
+        <div class="ooo">
+            <p>Free Shipping over 5000   &emsp; &emsp; &emsp; &emsp;  Signup for 10% off your first order
+                &emsp; &emsp; &emsp; &emsp;</p>
+        </div>
+    </div>
+    <div class="header">
+    <div class="cont1">
+    <div class="navbar">
+        <div class="logo">
+            <img src="https://i.pinimg.com/736x/d1/1e/b4/d11eb41cc177accca9dae5459701f794.jpg">
+        </div>
+        <div style="width: 40%;">
+        <input type="text" placeholder="Search" id="search" style="height: 19px;width: 80%;">
+        <button style="margin-top: 35px;"><img src="https://e7.pngegg.com/pngimages/639/878/png-clipart-computer-icons-search-box-button-button-vector-icons-rim.png" style="width: 10px;"></button>
+        </div>
+        <div class="navv">
+            <a href="index.html"><p class="contents">Home</p></a>
+            <a href="Arka_Aboutus.html" target="_blank"><p class="contents">About us</p></a>
+            <a href="Arka_Cart.html" target="_blank"><p class="contents">Cart</p></a>
+            <a href="Arka_Collections.html" target="_blank"><p class="contents">Collections</p></a>
+            <a href="Arka_Profile.html" target="_blank"><p class="contents">Profile</p></a>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col2">
+            <h2>Redefine Your Style,</h2>
+            
+            <h2>Redefine Your Life</h2>
+            
+            <h4>Where every thread tells your story, weaving elegance, confidence,<br> and individuality into every stitch</h4>
+           <br><br><br> <a href="" class="explnow">Explore Now &#8594;</a>
+        </div>
+        <div class="col2">
+            <img src="https://i.pinimg.com/736x/a3/b7/ba/a3b7ba13e9c251efadaabb33d7cbc77f.jpg">
+        </div>
+    </div>
+    </div>
+</div>
+<div style="text-align: center;clear: both;">
+    <div style="height: 20px;">
+        <h1></h1>
+    </div>
+</div>
+
+<h1 style="text-align: center;margin-top: 100px;">Top & Trending</h1>
+
+<div>
+    <div class="mi">
+        <a href="Arka_Product.html" target="_blank">
+        <div style="text-align: center;" class="tt">
+            <img src="https://www.ottostore.com/cdn/shop/files/01_d10b3c82-75fe-414f-8b2e-2abc032ede2b_800x800.jpg?v=1741599301" width="200px">
+            <p style="font-size: small;">Silver Blue Art Deco Printed Shirt<br>
+                Rs. 1,599.00</p>
+        </div>
+    </a>
+
+    <a href="Arka_Product.html" target="_blank">
+        <div style="text-align: center;" class="tt">
+            <img src="https://www.ottostore.com/cdn/shop/files/01_12ddf9f4-621a-4f5f-a22e-53cb8b7ae5a2_500x.jpg?v=1741599328" width="200px">
+            <p style="font-size: small;">Black Monochrome Printed Shirt<br>
+                Rs. 1,499.00
+        </div>
+
+    </a>
+
+    <a href="Arka_Product.html" target="_blank">
+        <div style="text-align: center;" class="tt">
+            <img src="https://www.ottostore.com/cdn/shop/files/01_800x800.jpg?v=1741599326" width="200px">
+            <p style="font-size: small;">Emerald Green Checkered Shirt<br>
+                Rs. 1,499.00</p>
+        </div>
+    </a>
+
+    <a href="Arka_Product.html" target="_blank">
+        <div style="text-align: center;" class="tt">
+            <img src="https://www.ottostore.com/cdn/shop/files/01_77ca7433-cf3a-4302-8be9-9fa8961808d7_800x800.jpg?v=1741599312" width="200px">
+            <p style="font-size: small;">White Graphic Printed Satin Shirt<br>
+                Rs. 1,499.00</p>
+        </div>
+    </a>
+    </div>
+</div>
+
+<div>
+    <div class="mi">
+
+        <a href="Arka_Product.html" target="_blank">
+        <div style="text-align: center;" class="tt">
+            <img src="https://www.ottostore.com/cdn/shop/files/01_ae5729c5-11eb-43f5-b22e-b859e4be1f87_500x.jpg?v=1741599342" width="200px">
+            <p style="font-size: small;">Black Elevated  Neck T Shirt<br>
+                Rs. 1,399.00</p>
+        </div>
+        </a>
+        <a href="Arka_Product.html" target="_blank">
+        <div style="text-align: center;" class="tt">
+            <img src="https://www.ottostore.com/cdn/shop/files/01_f61010be-febe-48a8-8814-21b8282d1ca4_500x.jpg?v=1741599294" width="200px">
+            <p style="font-size: small;">White Printed Polo T Shirt<br>
+                Rs. 1,299.00</p>
+        </div>
+        </a>
+        <a href="Arka_Product.html" target="_blank">
+        <div style="text-align: center;" class="tt">
+            <img src="https://www.ottostore.com/cdn/shop/files/01_3c148feb-fb4b-40f4-82fe-d1c155bd6325_500x.jpg?v=1741599340" width="200px">
+            <p style="font-size: small;">White Stencil Printed Neck T Shirt<br>
+                Rs. 1,599.00</p>
+        </div>
+        </a>
+        <a href="Arka_Product.html" target="_blank">
+            
+        <div style="text-align: center;" class="tt">
+            <img src="https://www.ottostore.com/cdn/shop/files/01_7c572cc4-a764-4c4d-8b71-a1dd53e6c2fe_500x.jpg?v=1741599345" width="200px">
+            <p style="font-size: small;">Fawn Jacquard Polo T Shirt<br>
+                Rs. 1,299.00</p>
+        </div>
+        </a>
+    </div>
+</div>
+
+
+<div>
+    <div class="mi">
+        <a href="Arka_Product.html" target="_blank">
+        <div style="text-align: center;" class="tt">
+            <img src="https://wrogn.com/cdn/shop/files/4_4330fdba-36b2-4e7f-846e-4784771f1314.webp?v=1740145918&width=360" width="200px">
+            <p style="font-size: small;">Solid Knit Casual Trouser<br>
+                Rs. 2,149.00</p>
+        </div>
+        </a>
+        <a href="Arka_Product.html" target="_blank">
+        <div style="text-align: center;" class="tt">
+            <img src="https://myraymond.com/cdn/shop/files/PMTX07645-B8-1.jpg?v=1719767342" width="200px">
+            <p style="font-size: small;">Navy Formal Trousers<br>
+                Rs. 1,499.00
+                </p>
+        </div>
+        </a>
+
+        <a href="Arka_Product.html" target="_blank">
+        <div style="text-align: center;" class="tt">
+            <img src="https://wrogn.com/cdn/shop/files/1_f36402a4-298c-40a4-b050-e82b3e45e6fb.webp?v=1739348824&width=360" width="200px">
+            <p style="font-size: small;">Solid White Loose Fit Trouser<br>
+                Rs. 2,449.00</p>
+        </div>
+        </a>
+
+        <a href="Arka_Product.html" target="_blank">
+        <div style="text-align: center;" class="tt">
+            <img src="https://wrogn.com/cdn/shop/files/1_3abad0c4-5fd2-4586-ac2a-e069c4253ad4.webp?v=1738838985&width=360" width="200px">
+            <p style="font-size: small;">Urban Slim Fit Trouser in Tan<br>
+                Rs. 1,689.00</p>
+        </div>
+        </a>
+    </div>
+</div>
+
+<div>
+    <div class="mi">
+        <a href="Arka_Product.html" target="_blank">
+        <div style="text-align: center;" class="tt">
+            <img src="https://www.beyoung.in/api/cache/catalog/products/loose_fit_pyjama/light_grey_loose-fit_pyjama_for_men_base_30_10_2024_700x933.jpg" width="200px">
+            <p style="font-size: small;">Light Grey Loose-fit Pyjamas<br>
+                Rs. 899.00</p>
+        </div>
+        </a>
+
+        <a href="Arka_Product.html" target="_blank">
+        <div style="text-align: center;" class="tt">
+            <img src="https://www.beyoung.in/api/cache/catalog/products/new_shirt_upload_21_10_2022/brown_oversize_corduroy_cargo_pants_base_06_03_2025_700x933.jpg" width="200px">
+            <p style="font-size: small;">Brown Oversize Cargo Pants<br>
+                Rs. 1,349.00</p>
+        </div>
+        </a>
+
+        <a href="Arka_Product.html" target="_blank">
+        <div style="text-align: center;" class="tt">
+            <img src="https://www.beyoung.in/api/cache/catalog/products/new_shirt_upload_21_10_2022/wine_chinese_dragon_back_patch_oversized_t-shirt_zoom_view_11_03_2025_700x933.jpg" width="200px">
+            <p style="font-size: small;">Wine Chinese Dragon Oversized<br>
+                Rs. 699.00</p>
+        </div>
+        </a>
+
+        <a href="Arka_Product.html" target="_blank">
+        <div style="text-align: center;" class="tt">
+            <img src="https://www.beyoung.in/api/cache/catalog/products/new_shirt_upload_21_10_2022/blue_chevron_half_sleeve_viscose_shirt_base_04_01_2024_700x933.jpg" width="200px">
+            <p style="font-size: small;">Blue Chevron Half Sleeve Shirt<br>
+                Rs. 799.00</p>
+        </div>
+        </a>
+    </div>
+</div>
+<div>
+    <div class="mi" style="margin-bottom: 120px;" class="tt">
+        <a href="Arka_Product.html" target="_blank">
+        <div style="text-align: center;" class="tt">
+            <img src="https://images.bestsellerclothing.in/data/JJ/31-jan-2025/901462301_g0.jpg?width=415&height=550&mode=fill&fill=blur&format=auto" width="200px">
+            <p style="font-size: small;">Black Check Print Formal Blazer<br>
+                Rs. 8,499.00</p>
+        </div>
+        </a>
+
+        <a href="Arka_Product.html" target="_blank">
+        <div style="text-align: center;" class="tt">
+            <img src="https://images.bestsellerclothing.in/data/JJ/31-jan-2025/901462403_g0.jpg?width=488&height=650&mode=fill&fill=blur&format=auto" width="200px">
+            <p style="font-size: small;">Dark Grey Stretch Formal Blazer<br>
+                Rs. 7,649.00</p>
+        </div>
+        </a>
+
+        <a href="Arka_Product.html" target="_blank">
+        <div style="text-align: center;" class="tt">
+            <img src="https://images.bestsellerclothing.in/data/JJ/15-april-2024/195435801_g0.jpg?width=488&height=650&mode=fill&fill=blur&format=auto" width="200px">
+            <p style="font-size: small;">Light Blue Knitted Set Blazer<br>
+                Rs. 4,399.00</p>
+        </div>
+        </a>
+
+        <a href="Arka_Product.html" target="_blank">
+        <div style="text-align: center;" class="tt">
+            <img src="https://images.bestsellerclothing.in/data/JJ/26-feb-2024/103231901_g0.jpg?width=488&height=650&mode=fill&fill=blur&format=auto" width="200px">
+            <p style="font-size: small;">Blue Striped Formal Blazer<br>
+                Rs. 4,399.00</p>
+        </div>
+        </a>
+    </div>
+</div>
+
+<div class="shopbycat" style="margin-bottom: 100px;">
+    <a href="Arka_Collections.html" target="_blank">
+    <div style="background-color: #383841;width: 100%;justify-content: space-between;padding-bottom: 70px;">
+        <br>
+        <h3 style="text-align: center; color: white;margin-top: 20px;margin-top: 60px;">DISCOVER OUR COLLECTION</h3>
+    <div class="mimgs">
+        <div style="text-align: center;">
+            <img src="https://www.beyoung.in/api/catalog/homepage-nov/home-page-13-march/bestseller-Polo-t-shirts.jpg" class="frimg">
+            <br><br>
+        </div>
+        <div style="text-align: center;">
+            <img src="https://www.beyoung.in/api/catalog/homepage-nov/home-page-13-march/bestseller-Jean.jpg" class="frimg">
+            <br><br>
+        </div>
+        <div style="text-align: center;">
+            <img src="https://www.beyoung.in/api/catalog/homepage-nov/home-page-13-march/bestseller-oversized-i-shirt.jpg" class="frimg">
+            <br><br>
+        </div>
+        <div style="text-align: center;">
+            <img src="https://www.beyoung.in/api/catalog/homepage-nov/home-page-13-march/bestseller-Pyjamas-1.jpg" class="frimg">
+            <br><br>
+        </div>
+    </div>
+</div>
+</a>
+</div>
+
+
+
+<div>
+    <div>
+        <h3 style="text-align: center;margin-top: 150px;">everydayXculsives</h3>
+        <div class="mi" style="margin-bottom: 120px;">
+            <div>
+                <img src="https://www.beyoung.in/api/catalog/homepage-nov/26feb25/just-in/1.jpg" width="200px">
+                <div style="border-style:groove;padding-left: 5px;border-radius: 10px;">
+                <p>Green Pleated Knee <br>Camo Cargo Pants</p>
+                <p>&#x20B9;1449</p>
+                </div>
+            </div>
+            <div>
+                <img src="https://www.beyoung.in/api/catalog/homepage-nov/home-page-mar-8/Just-in-feb-CARGO.jpg" width="200px">
+                <div style="border-style:groove;padding-left: 5px;border-radius: 10px;">
+                    <p>Light Olive 6-Pockets<br>Cargo Pants</p>
+                    <p>&#x20B9;1549</p>
+                    </div>
+            </div>
+            <div>
+                <img src="https://www.beyoung.in/api/catalog/homepage-nov/26feb25/just-in/3.jpg" width="200px">
+                
+                <div style="border-style:groove;padding-left: 5px;border-radius: 10px;">
+                    <p>Light Olive 6-Pockets <br>Cargo Pant</p>
+                <p>&#x20B9;1349</p>
+                    </div>
+            </div>
+            <div>
+                <img src="https://www.beyoung.in/api/catalog/homepage-nov/26feb25/just-in/4.jpg" width="200px">
+                
+                <div style="border-style:groove;padding-left: 5px;border-radius: 10px;">
+                    <p>Black Patch Pocket Contrast <br>Stitch Cargo Pants</p>
+                <p>&#x20B9;1599</p>
+                    </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+
+
+
+
+<div>
+    <div>
+        <div class="mi">
+            <div style="text-align: center;">
+                <img src="https://www.beyoung.in/api/catalog/homepage-nov/26feb25/social/1.jpg" width="225px">
+            </div>
+            <div style="text-align: center;">
+                <img src="https://www.beyoung.in/api/catalog/homepage-nov/26feb25/social/2.jpg" width="225px">
+            </div>
+            <div style="text-align: center;">
+                <img src="https://www.beyoung.in/api/catalog/homepage-nov/26feb25/social/3.jpg" width="225px">
+            </div>
+        </div>
+    </div>
+</div>
+
+
+
+<div style="margin-top: 150px;">
+    <h3 style="text-align: center;margin-top: 50px;">SHOP COMBOS</h3>
+    <div>
+        <div class="mi" style="margin-bottom: 120px;">
+            <div style="text-align: center;">
+                <img src="https://www.beyoung.in/api/catalog/homepage-nov/homepage-jan25/Combo/satin-shirts_8.jpg" width="225px">
+            </div>
+            <div style="text-align: center;">
+                <img src="https://www.beyoung.in/api/catalog/homepage-nov/new_6feb25/Artboard_1_copy_2.jpg" width="225px">
+            </div>
+            <div style="text-align: center;">
+                <img src="https://www.beyoung.in/api/catalog/homepage-nov/new_6feb25/cargo-jogger.jpg" width="225px">
+            </div>
+            <div style="text-align: center;">
+                <img src="https://www.beyoung.in/api/catalog/homepage-nov/new_6feb25/pyjama.jpg" width="225px">
+            </div>
+        </div>
+    </div>
+</div>
+
+
+
+
+
+
+<br>
+<div style="display: flex;width: 100%;">
+<div class="signupimg" >
+    <img src="https://i.pinimg.com/736x/7f/a8/17/7fa8171f29200ceb73b312095ab57058.jpg" width="100%">
+    <div class="signup">
+        <h1 style="color: white;text-shadow:0px 0px 12px #1a1a2e ;">Join the<br> ARKA Club</h1>
+        <p style="text-shadow: 0px 0px 15px white;color: aqua;">Sign up & save 10% on your first order.<br> Terms and conditions apply.</p>
+        <input type="text" placeholder="Enter your E mail Address" style="height: 25px;width: 200px;">
+        <br>
+        <br>
+       <a href="Arka_Join.html" target="_blank"> <input type="button" value="Sign Up"></a>
+    </div>
+</div>
+
+
+<div class="lastpag" style="line-height: 250%;" >
+    <div> 
+      <h3>  Customer Care</h3>
+                 Shipping
+      <br>      Returns & Exchanges
+      <br>  Try Before You Buy
+      <br>  Size Guide
+      <br>  Glossary
+      <br>  FAQ'S
+    </div>
+
+    <div>
+        <h3>  Information</h3>
+     About Us
+    <br>    Our Responsibility
+    <br>Terms & Conditions
+    <br>Cookie Policy
+    <br>Privacy
+    <br>About Pre-order
+    <br>Stockists
+        </div>
+<div>
+       <h3> Stay In Touch </h3>
+
+Contact us<br>
+Facebook<br>
+Instagram<br>
+TikTok<br>
+Pinterest
+</div>
+</div>
+</div>
+    
+
+<div style="padding: 2px;background-color: #d4af37;padding-top: 10px; text-align: center;">
+    Contact us at
+    <pre>
+Ph.no: +91 97046 99206<br>
+e-mail : ArkaFashions@gmail.com
+</pre>
+</div>
+
+</body>
+</html>
