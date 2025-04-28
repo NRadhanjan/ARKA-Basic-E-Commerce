@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Join Arka</title>
+</head>
+
+<style>
+
+    @keyframes slide {
+      from{
+          transform: translateX(0);
+      }
+      to{
+          transform: translateX(-100%);
+      }
+  }
+  div.mi a{
+      text-decoration: none;
+      color: white;
+      
+  }
+  .caoll a:hover{
+      padding: 5px;
+      background-color: #1a1a2e;
+      color: aliceblue;
+      border-radius: 10px;
+  }
+  div.mi a p{
+
+       background-color: #181403;
+  }
+  .oo{
+      overflow: hidden;
+      white-space: nowrap;
+  }
+  .ooo{
+      display: inline-block;
+      animation: slide 7s linear infinite;
+      font-size: 60%;
+  }
+
+
+  body{
+      overflow-x: hidden;
+      margin: 0px;
+  }
+  .header{
+      background-color: #cbcbcb;
+  }
+  .logo{
+      height: 70px;
+      overflow: hidden;
+  }
+  .logo img{
+      height: 60px;
+      object-fit: cover
+  }
+  .navbar{
+      display:flex;
+      justify-content:space-between;
+      
+  }
+  .navv{
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 5px;
+      top: 0;
+      left: 0;
+  }
+  .contents{
+      font-size: small;
+      margin-left: 20px;
+  }
+  .navv a{
+      text-decoration: none;
+      color: #1a1a2e;
+      margin-right: 25px;
+  }
+  label{
+        font-size: larger;
+    }
+    .error{
+        color: red;
+    }
+    .passed{
+        color: green;
+    }
+    input:hover{
+        background-color:  #3f3c37;
+        color: rgb(255, 255, 255);
+    }
+    .Button:hover{
+        background-color:  #9383ec;
+        color: rgb(0, 0, 0);
+    }
+</style>
+
+<body style="background-color:  #cbcbcb;">
+    <div class="header">
+        <div class="cont1">
+        <div class="navbar">
+            <div class="logo">
+                <img src="https://i.pinimg.com/736x/d1/1e/b4/d11eb41cc177accca9dae5459701f794.jpg">
+            </div>
+            <div style="width: 40%;">
+            <input type="text" placeholder="Search" id="search" style="height: 13px;width: 80%;">
+            <button style="margin-top: 20px;"><img src="https://e7.pngegg.com/pngimages/639/878/png-clipart-computer-icons-search-box-button-button-vector-icons-rim.png" style="width: 10px;"></button>
+            </div>
+            <div class="navv">
+                <a href="index.html" target="_blank"><p class="contents">Home</p></a>
+                <a href="Arka_Aboutus.html" target="_blank"><p class="contents">About us</p></a>
+                <a href="Arka_Cart.html" target="_blank"><p class="contents">Cart</p></a>
+                <a href="Arka_Collections.html" target="_blank"><p class="contents">Collections</p></a>
+                <a href="Arka_Profile.html" target="_blank"><p class="contents">Profile</p></a>
+            </div>
+        </div>
+    </div>
+    </div>
+
+    <div style="text-align: center;">
+        <img src="https://i.pinimg.com/736x/d1/1e/b4/d11eb41cc177accca9dae5459701f794.jpg" width="90px">
+    </div>
+
+
+
+    <div>
+        <h2 style="text-align: center;">Join Arka Club</h2>
+        <div style="background-color: #1a1a2e; color: white; padding: 20px; display: flex; flex-direction: column; align-items: center; gap: 10px;">
+            
+            <label>Username:</label>
+            <input type="text" id="username" placeholder="Username" required>
+    
+            <label>E-mail:</label>
+            <input type="email" id="email" placeholder="E-mail" required>
+    
+            <label>Password:</label>
+            <input type="password" id="pasw" placeholder="Password" required>
+    
+            <button type="button" onclick="CheckP()" class="Button" style="margin-top: 10px;">Sign up</button>
+            
+            <p id="Valstatus"></p>
+        </div>
+    </div>
+    
+    <br><br><br>
+    
+    <div style="padding: 2px; background-color: #d4af37; padding-top: 10px; text-align: center;">
+        Contact us at
+        <pre>
+    Ph.no: +91 97046 99206<br>
+    e-mail : ArkaFashions@gmail.com
+        </pre>
+    </div>
+    
+    <script>
+        function CheckP() {
+            const password = document.getElementById("pasw").value;
+            const username = document.getElementById("username").value;
+            const email = document.getElementById("email").value;
+            let tex = "";
+            const hasat = /@/.test(email);
+            const minlen = 8;
+            const hasCap = /[A-Z]/.test(password);
+            const hasSma = /[a-z]/.test(password);
+            const hasNum = /\d/.test(password);
+            const hasSym = /[!@#$%^&*()_\-+=~`]/.test(password);
+    
+            const status = document.getElementById("Valstatus");
+        
+    
+            if (username === "") {
+                tex = "Enter a valid Username";
+                document.getElementById("Valstatus").className="error";
+            } else if (email === "") {
+                tex = "Enter a valid E-mail";
+                document.getElementById("Valstatus").className="error";
+            } else if (!hasat) {
+                tex = "Enter valid mail";
+                document.getElementById("Valstatus").className="error";
+            }
+            else if (password.length === 0) {
+                tex = "Enter a valid Password";
+                document.getElementById("Valstatus").className="error";
+            } else if (password.length < minlen) {
+                tex = "Password should be at least 8 characters long";
+                document.getElementById("Valstatus").className="error";
+            } else if (!hasCap) {
+                tex = "Password must contain at least one uppercase letter";
+                document.getElementById("Valstatus").className="error";
+            } else if (!hasSma) {
+                tex = "Password must contain at least one lowercase letter";
+                document.getElementById("Valstatus").className="error";
+            } else if (!hasNum) {
+                tex = "Password must contain at least one number";
+                document.getElementById("Valstatus").className="error";
+            } else if (!hasSym) {
+                tex = "Password must contain at least one special character";
+                document.getElementById("Valstatus").className="error";
+            } else {
+                tex = "Account Created Successfully";
+                document.getElementById("Valstatus").className="passed";
+            }
+            
+            status.textContent = tex;
+        }
+    </script>
+    
+    
+</body>
+</html>
